@@ -1,0 +1,74 @@
+.divider{
+    height: 100vh;
+    width: 1px;
+    background-color: var(--color-grey);
+    opacity: 0.3;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+
+
+   
+    & > *{
+        padding: 2rem 2rem;
+        cursor: pointer;
+       
+    }
+   
+
+    &__icon-box{
+       
+
+       
+    }
+
+    &__icon{
+        fill: var(--color-white);
+       
+      
+        width:1.9rem;
+        height: 1.9rem;
+
+        &--active{
+            fill:var(--color-primary-green);
+
+        }
+
+        &:hover{
+            fill: var(--color-primary-green);
+        }
+
+    }
+   
+}
+.logout{
+    padding: 2rem 2rem;
+
+    &__icon{
+        fill: var(--color-white);
+       
+      
+        width:2.5rem;
+        height: 2.5rem;
+        &:hover{
+            fill: var(--color-primary-green);
+        }
+    }
+    &__version{
+        color: var(--color-white);
+    }
+}
+.title{
+    display: flex;
+    flex-direction: column;
+
+    &__primary{
+     color: var(--color-white);
+     font-size: 2rem;
+     font-weight: bold;
+    }
+    &__secondary{
+
+    }
+}

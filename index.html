@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Admin Interface</title>
+</head>
+<body>
+   <main class="container">
+       <section class="left">
+          <nav class="menu">
+              <div class="menu__icon-box">
+                <svg class ="menu__icon"viewBox="0 0 100 80" width="40" height="40">
+                    <rect  width="100" height="20"></rect>
+                    <rect y="30" width="60" height="20"></rect>
+                    <rect y="60" width="30" height="20"></rect>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon menu__icon--active">
+                    <use xlink:href="img/sprites.svg#icon-home"></use>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon">
+                    <use xlink:href="img/sprites.svg#icon-files-empty"></use>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon">
+                    <use xlink:href="img/sprites.svg#icon-calendar"></use>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon">
+                    <use xlink:href="img/sprites.svg#icon-database"></use>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon">
+                    <use xlink:href="img/sprites.svg#icon-chat"></use>
+                </svg>
+              </div>
+              <div class="menu__icon-box">
+                <svg class="menu__icon">
+                    <use xlink:href="img/sprites.svg#icon-users"></use>
+                </svg>
+              </div>
+          </nav>
+          <div class="logout">
+            <svg class="logout__icon">
+                <use xlink:href="img/sprites.svg#icon-exit"></use>
+            </svg>
+            <div class="logout__version">
+              v1.2.4
+            </div>
+          </div>
+       
+       </section>
+        <div class="divider">
+        
+        </div>
+       <section class="right">
+        <header class="header">
+         <section class="left-section">
+          <div class="title">
+            <div class="title__primary">
+              My Documents
+            </div>
+            <div class="title__secondary">
+              Photos,Videos,Documents
+            </div>
+
+        
+          </div>
+          <form action="#" class="search">
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprites.svg#icon-search"></use>
+            </svg>
+            </button>
+            <input type="text" class="search__input" placeholder="search">
+          </form>
+         </section>
+         <section class="right-section">
+           <div class="date">Feb 16,2021</div>
+           <img src="/img/rosius.jpeg" alt="Rosius Ndimofor" class="profile-pic">
+           <img src="/img/svg/keyboard_arrow_down-white-18dp.svg" alt="down arrow">
+         </section>
+        </header>
+
+       </section>
+   </main>
+</body>
+</html>
