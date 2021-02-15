@@ -59,16 +59,142 @@
         color: var(--color-white);
     }
 }
+/////////////////////////////////////////// HEADER-FIRST_SECTION
 .title{
     display: flex;
     flex-direction: column;
 
+
     &__primary{
      color: var(--color-white);
-     font-size: 2rem;
+     font-size: 1.9rem;
      font-weight: bold;
     }
     &__secondary{
+      color: var(--color-grey);
+      font-size: 1.2rem;
+    }
+}
+////SEARCH
+
+.search{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    &__input{
+        font-family: inherit;
+        font-size: 1.7rem;
+        color: inherit;
+        background-color:var(--color-search-background);
+     
+        color:var(--color-white);
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        
+       
+
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--color-search-background);
+        }
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color: white;
+        }
+    }
+
+    &__icon{
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: white;
+        display: none
+      
+        
+
+        
+    }
+
+    &__input:focus + &__button{
+        background-color: var(--color-grey);
+    }
+    &__button{
+        border: none;
+        background-color: transparent;
+       
+        left: 30px;
+
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+}
+//////////////////////////////////////HEADER-SECOND_SECTION
+.date{
+    color: var(--color-white);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+   
+
+}
+.profile-pic{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+   
+
+}
+.down-icon{
+    width: 2.2rem;
+    height: 2.2rem;
+    
+}
+.cards{
+    display: flex;
+
+}
+.card1{
+    width: 25%;
+    height: 20rem;
+    background-color: var(--color-card-background);
+    margin: 2rem 2rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+
+    &__icons{
+        display: flex;
+        height: 6rem;
+
+        justify-content: space-between;
+   
+       
+        padding: 0 3rem;
+        padding-top: 3rem;
+        align-items: center;
+
+       
+    }
+    &__icon-folder{
+        width: 5rem;
+        fill: var(--color-card-1);
+
+    }
+    &__icon-more{
+        width: 2rem;
+       
+        fill: var(--color-white);
 
     }
 }
